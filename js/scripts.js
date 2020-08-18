@@ -21,7 +21,7 @@ $(document).ready(function() {
 
       for (let i=1; i<newArr.length; i+=1) {
         let facNum = newArr[0] * newArr[1];
-        let newFacNum = facNum
+        let newFacNum = 1
         newFacNum *= newArr[2+i];
         console.log(newFacNum);
         
