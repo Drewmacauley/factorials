@@ -14,11 +14,15 @@ $(document).ready(function() {
     }
     
     
-    for (i = 0; i < newArr.length; i +=1) {
-      let newFacNum = 1;
-      newFacNum *= newArr[i];
-      console.log(newFacNum);
-    }
+    let facNum = newArr.reduce((a, b) => a * b);
+    console.log(facNum);
+    $("#result").text(facNum);
+    
+    // for (i = 0; i < newArr.length; i +=1) {
+    //   let facNum = newArr[i];
+    //   facNum *= newArr[i];
+    //   console.log(facNum);
+    // }
     // for (let i = 1; i < newArr.length; i++) {
     //   let newFacNum = newArr[i] * i;
     //   // console.log(newFacNum);
